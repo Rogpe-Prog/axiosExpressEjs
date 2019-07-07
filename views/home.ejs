@@ -1,0 +1,13 @@
+<h2> Show API Data </h2>
+
+<div>
+    <ul>
+        <li>
+            <% data.forEach (data => { %>
+            <h3><%- data.first_name %> <%- data.last_name %></h3>
+            <%- data.email %>
+            <img src="<%- data.avatar %>" height="42" width="42">
+            <% }) %>
+        </li>
+    </ul>
+</div>
